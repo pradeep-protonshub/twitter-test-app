@@ -1,0 +1,39 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: bbc_dev
+
+staging:
+  <<: *default
+  database: bbc_db
+  username: bbcadmin
+  password: 2pON)H&3ae84
+  host: bbc-db.ckkuzxsjxfo5.ap-south-1.rds.amazonaws.com
+  port: 3306
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: bbc_test
+
+production:
+  <<: *default
+  database: bbc_db
+  username: bbcadmin
+  password: 2pON)H&3ae84
+  host: bbc-db-prod.ckkuzxsjxfo5.ap-south-1.rds.amazonaws.com
+  port: 3306

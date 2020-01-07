@@ -1,0 +1,60 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  push_notification:
+    registration:
+      title: "Registration successful."
+      description: "Congratulations! You have successfully registered for the event “%{event_name}“"
+      success: "Notification sent."
+      error: "event id or user id not present."
+    enter_event:
+      title: "Enter the event."
+      description: "It seems you are on location. Enter the event code to enter the event."
+    questionnaire:
+      title: "Questionnaire"
+      description: "Hey! We have sent you a Questionnaire to fill before entering the event"
+    audio_play:
+      title: "Audio Playback started"
+      description: "Click to listen to the audio playback"
+    post_event_survey:
+      title: "Post Event Survey"
+      description: "Hey! We have sent you a Survey to fill about the event! Looking forward for your response!"
+    poll:
+      title: "Poll Time!"
+      description: "Hey! Please do fill the Poll we've sent you now!"
+    end_event:
+      title: "The even has ended!"
+      description: "The event has now been finished."
+  surveys: "Questionnaire"
+  survey_details: "Questionnaire Title"
+  sections: "Questions"

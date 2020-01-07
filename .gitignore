@@ -1,0 +1,10 @@
+tmp
+
+# Ignore bundler config.
+/.bundle
+/log/*
+.DS_Store
+
+.byebug_history
+
+*.log
